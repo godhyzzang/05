@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 int main() {
-	//4. 덧셈 프로그램
-	//입력한 숫자를 1부터 해당 숫자까지 모두 더하는 계산
-	int number;
-	int sum=0; //sum 0 초기화해야함
+	//3
 	
-	printf("input a number");
-	scanf_s("%i", &number);
+	char c;
+	int num=0;
+	scanf_s("%c", &c);
+	
 
-	for (int i = 0; i < number; i++) {
-		
-		
-		sum += (i+1);
+	while ((c=getchar())!='\n') {
+		if('0'<=c && c<='9'){
+			num += 1; 
+		}
 	}
+	printf("number of int : %i",num);
+
 	
-	printf("Total : %i",sum);
 
 }
