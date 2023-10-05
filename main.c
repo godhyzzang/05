@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-	int whatkindofnumber;
-	scanf_s("%i",&whatkindofnumber);
+	
+	int inputnumber;
+	scanf_s("%i", &inputnumber);
 
-	if (whatkindofnumber == 0)
-		printf("the number is 0");
-	else if (whatkindofnumber < 0)
-		printf("the number is negative");
+	if (inputnumber < 0)
+		printf("%i", -inputnumber);
 	else
-		printf("the number is positive");
+		printf("%i", inputnumber);
+
 }
